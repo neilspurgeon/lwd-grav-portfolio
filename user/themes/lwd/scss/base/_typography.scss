@@ -1,0 +1,27 @@
+$font-stack: Helvetica, sans-serif;
+$line-height: 1.6;
+$base-font-weight: normal;
+
+
+/* $rembase = 10px */
+
+html {
+    font-size: 16px;
+}
+
+body {
+  font-family: $font-stack;
+  font-size: 1.0rem; /* 10 ÷ $rembase */
+}
+
+h1,
+h2 {
+  font-size: 1.1rem; /* 11 ÷ $rembase */
+  font-weight: bold;
+}
+
+h3,
+h4 {
+  font-size: 1.0rem; /* 10 ÷ $rembase */
+  font-weight: bold;
+}

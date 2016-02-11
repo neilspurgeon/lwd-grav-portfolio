@@ -8,7 +8,7 @@ var gulp       = require('gulp'),
 
 // Gulp Sass Task 
 gulp.task('styles', function() {
-  return sass('scss/*.scss', { sourcemap: true })
+  return sass('scss/main.scss', { sourcemap: true })
     .pipe(sourcemaps.init())
     .pipe(autoprefixer('last 2 version'))
     .pipe(sourcemaps.write())

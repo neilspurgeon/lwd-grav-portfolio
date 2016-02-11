@@ -1,0 +1,16 @@
+{% extends 'partials/base.html.twig' %}
+
+  {% block content %}
+  <div class="project-container">
+
+    <div class="project-info">
+      {{ page.content }}
+    </div>
+    
+    <div class="horizontal-scroll">
+      {% for image in page.media.images %}
+        {{ image.derivatives(320, 1440, 100).sizes('(max-width:900px) 50vw').html() }}
+      {% endfor %}
+    </div>
+</div>
+  {% endblock %}

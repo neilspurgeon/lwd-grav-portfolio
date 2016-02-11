@@ -1,0 +1,21 @@
+$sidebar-width: 20em;
+
+.project-container {
+
+}
+
+.project-info {
+  width: $sidebar-width;
+  position: fixed;
+}
+
+.horizontal-scroll {
+  margin-left: $sidebar-width;
+  overflow: scroll;
+  white-space: nowrap;
+  img {
+    display: inline-block;
+    height: 80vh;
+  }
+}
+

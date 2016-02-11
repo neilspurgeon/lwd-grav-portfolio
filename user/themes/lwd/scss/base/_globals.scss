@@ -1,0 +1,15 @@
+@import 'colors';
+
+* { box-sizing: border-box; } 
+
+html {background-color: $background-color;}
+
+body {
+  max-width: 1400px;
+  margin: 0 auto;
+  color: $primary;
+}
+
+a {
+  text-decoration: none;
+}
