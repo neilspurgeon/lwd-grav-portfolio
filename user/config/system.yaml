@@ -17,7 +17,7 @@ home:
   alias: /work
   hide_in_urls: false
 pages:
-  theme: antimatter
+  theme: lwd
   order:
     by: default
     dir: asc
