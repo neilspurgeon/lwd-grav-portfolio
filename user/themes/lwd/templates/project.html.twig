@@ -4,12 +4,25 @@
   <div class="project-container">
 
     <div class="project-info">
+      <h1 class="client">{{ page.header.client }}</h1>
+      <h2 class="title">{{ page.title }}</h2>
       {{ page.content }}
+      
+      {% if page.header.related_work %}
+        <ul>
+          <h3>Related Work</h3>
+          {% for p in page.header.related_work %}
+            <li><a class="styled-link" href="{{ base_url ~ p.url }}">{{ p.title }}</a></li>
+          {% endfor %}
+        </ul>
+      {% endif %}
+    
     </div>
     
     <div class="horizontal-scroll">
       {% for image in page.media.images %}
-        {{ image.derivatives(320, 1440, 100).sizes('(max-width:900px) 50vw').html() }}
+        
+          {{ image.lightbox().html() }}
       {% endfor %}
     </div>
 </div>

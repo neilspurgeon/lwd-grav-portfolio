@@ -5,14 +5,16 @@
   flex-direction: row;
   align-items: baseline;
   justify-content: space-between;
+  text-transform: uppercase;
   .left-nav, .right-nav {
     display: inline-block;
   }
-  .right-nav {
-
+  h1.site-title {
+    font-size: 1.6rem;
   }
   li {
     display: inline-block;
+    padding-left: 1em;
   }
   a {
     color: $primary;

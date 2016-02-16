@@ -21,11 +21,12 @@
     <title>{% if header.title %}{{ header.title }} | {% endif %}{{ site.title }}</title>
 
     {% block stylesheets %}
-      {% do assets.add('theme://css/main.css',100) %}
+      {% do assets.add('theme://css/main.css', 1) %}
     {% endblock %}
     {{ assets.css() }}
 
     {% block javascripts %}
+      {% do assets.add('theme://js/loading.js') %}
       {% do assets.add('https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js', 101) %}
       {% do assets.add('http://mfzy.co/packery.pkgd.js') %}
       {% do assets.addJs('theme://js/work-grid.js') %}
@@ -39,7 +40,9 @@
   
     <div class="container">
       {% include 'partials/navigation.html.twig' %}
-      {% block content %}{% endblock %}
+      <div id="preloaded-content">
+        {% block content %}{% endblock %}
+      </div>
     </div>
 
   </body>
