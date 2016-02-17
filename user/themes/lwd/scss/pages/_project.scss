@@ -25,7 +25,9 @@
 
 .horizontal-scroll {
   a { margin-right: $gutter-width; }
-  a:last-child { margin-right: 0px; }
+  .images {
+    a:last-child { margin-right: 0px; }
+  }
   img {
     width: 100%;
   }
@@ -36,9 +38,26 @@
     img {
       display: inline-block;
       width: auto;
-      height: 85vh;
+      height: calc(93vh - 5em);
     }
   } 
+}
+
+.pagination {
+  display: none;
+  @media (min-width: $lg-break) {
+    display: inline-block;
+    position: fixed;
+    bottom: 7.5vh;
+    right: 23px;
+    a {
+      margin-right: 1em;
+      opacity: .5;
+    }
+    a.active {
+      opacity: 1;
+    }
+  }
 }
 
 

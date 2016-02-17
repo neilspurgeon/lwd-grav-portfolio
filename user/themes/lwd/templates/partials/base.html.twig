@@ -26,10 +26,10 @@
     {{ assets.css() }}
 
     {% block javascripts %}
-      {% do assets.add('theme://js/loading.js') %}
       {% do assets.add('https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js', 101) %}
       {% do assets.add('http://mfzy.co/packery.pkgd.js') %}
       {% do assets.addJs('theme://js/work-grid.js') %}
+      {% do assets.add('theme://js/project.js') %}
     {% endblock %}
     {{ assets.js() }}
 
