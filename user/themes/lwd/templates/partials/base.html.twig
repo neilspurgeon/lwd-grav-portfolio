@@ -38,12 +38,10 @@
 
   <body>
   
-    <div class="container">
       {% include 'partials/navigation.html.twig' %}
-      <div id="preloaded-content">
+      <section id="preloaded-content" class="main-container">
         {% block content %}{% endblock %}
-      </div>
-    </div>
+      </section>
 
   </body>
 </html>

@@ -2,7 +2,7 @@
 
 // Variables
 $sidebar-width: 20vw;
-$gutter: 20px;
+$gutter-width: 20px;
 
 
 // Global Styling
@@ -13,7 +13,7 @@ html {background-color: $background-color;}
 body {
   max-width: 1400px;
   margin:  .5em 20px 5em;
-  color: $primary;
+  color: $primary-color;
   @media (min-width: 1440px) {
     margin: .5em auto;
   }
@@ -21,7 +21,7 @@ body {
 
 a {
   text-decoration: none;
-  color: $primary;
+  color: $primary-color;
 }
 
 a.styled-link {

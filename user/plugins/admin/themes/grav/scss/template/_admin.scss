@@ -173,7 +173,7 @@ $update-height: 3rem;
                 background: $page-bg;
                 color: $accent-fg;
                 padding-left: 16px;
-                border-left: 9px solid $secondary-accent-bg;
+                border-left: 9px solid $secondary-color-accent-bg;
 
                 @include breakpoint(tablet-range){
                     padding-left: 11px;
@@ -269,7 +269,7 @@ $update-height: 3rem;
         }
 
         .preview {
-            color: $secondary-accent-fg;
+            color: $secondary-color-accent-fg;
             font-size: 90%;
         }
 
@@ -457,7 +457,7 @@ $update-height: 3rem;
     .danger {
         &.button-bar {
             .button {
-                @include button-color($secondary-link);
+                @include button-color($secondary-color-link);
             }
         }
     }
@@ -598,7 +598,7 @@ $update-height: 3rem;
     }
 
     .secondary-accent {
-        @include linear-gradient($secondary-accent-bg, lighten($secondary-accent-bg,20%));
+        @include linear-gradient($secondary-color-accent-bg, lighten($secondary-color-accent-bg,20%));
     }
 }
 

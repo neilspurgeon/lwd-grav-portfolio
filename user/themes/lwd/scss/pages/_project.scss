@@ -24,13 +24,13 @@
 }
 
 .horizontal-scroll {
-  a { margin-right: $gutter; }
+  a { margin-right: $gutter-width; }
   a:last-child { margin-right: 0px; }
   img {
     width: 100%;
   }
   @media (min-width: 970px) {
-    margin-left: calc( #{$sidebar-width} + #{$gutter} );
+    margin-left: calc( #{$sidebar-width} + #{$gutter-width} );
     overflow: scroll;
     white-space: nowrap;
     img {
