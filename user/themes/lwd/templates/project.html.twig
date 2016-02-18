@@ -25,7 +25,7 @@
       <section class="images">
         {% for image in page.media.images %}
           {% set img_count = img_count + 1 %}
-          <a name="{{ 'image-' ~ img_count }}" rel="lightbox" href="{{ image.url }}">
+          <a class="project-img" id="{{ 'image-' ~ img_count }}" rel="lightbox" href="{{ image.url }}">
               {{ image.html() }}
           </a>
         {% endfor %}

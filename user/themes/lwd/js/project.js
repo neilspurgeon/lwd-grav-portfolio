@@ -6,6 +6,29 @@ $(document).ready(function() {
     event.preventDefault();
   });
 
+  $('.horizontal-scroll').scroll(function() {
+    var sectionOffset = $('.horizontal-scroll').offset().left;
+    var img = $('.project-img');
+
+
+    $('.pagination a').each(function () {
+      var sectionOffset = $('.horizontal-scroll').offset().left;
+      var scrollPos = $('.horizontal-scroll').scrollLeft() + sectionOffset;
+      var currLink = $(this);
+      var img = $(currLink.attr('href'));
+      var imgPos = img.position().left;
+      
+      if (imgPos <= scrollPos && imgPos + img.width() > scrollPos) {
+
+        currLink.addClass('active');
+      }
+      else{
+        currLink.removeClass('active');
+      }
+    });
+
+});
+
 }); 
 
 
@@ -29,8 +52,8 @@ var imgPagination = function() {
     links.removeClass('active');
     $(this).addClass('active');
     
-    var targetHash = this.hash.replace('#', '');
-    var target = $( 'a[name=' + targetHash + ']' );
+    targetHash = this.hash;
+    var target = $(targetHash);
     var targetOffset = target.offset().left - sectionOffset;
 
     $('.horizontal-scroll').stop().animate({
