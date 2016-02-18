@@ -1,6 +1,6 @@
 .project-info {
   width: 100%;
-  @media (min-width: 970px) {
+  @media (min-width: $lg-break) {
     width: $sidebar-width;
     position: fixed;
   }
@@ -31,7 +31,7 @@
   img {
     width: 100%;
   }
-  @media (min-width: 970px) {
+  @media (min-width: $lg-break) {
     margin-left: calc( #{$sidebar-width} + #{$gutter-width} );
     overflow: scroll;
     white-space: nowrap;
