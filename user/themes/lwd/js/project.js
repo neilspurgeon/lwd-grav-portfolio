@@ -2,7 +2,7 @@ $(document).ready(function() {
   imgPagination();
 
   $('.horizontal-scroll').mousewheel(function(event, delta) {
-    if (window.width() >= 1000) {
+    if (window.screen.width >= 1000) {
       this.scrollLeft -= (delta * 30);
       event.preventDefault();
     }
