@@ -1,13 +1,25 @@
-$font-stack: Helvetica, sans-serif;
-$line-height: 1.6;
+@font-face {
+  font-family: 'Maison';
+  src: url('../assets/fonts/MaisonNeueWEB-Book.woff') format('woff');
+  font-weight: normal;
+  font-style: normal; 
+}
+
+@font-face {
+  font-family: 'Maison';
+  src: url('../assets/fonts/MaisonNeueWEB-Demi.woff') format('woff');
+  font-weight: bold;
+  font-style: normal; 
+}
+
+$font-stack: 'Maison', Helvetica, sans-serif;
+$line-height: 1.4;
 $base-font-weight: normal;
 
-
 /* $rembase = 10px */
-
 html {
-    font-size: 13px;
-    line-height: 1.4;
+  font-size: 13px;
+  line-height: $line-height;
 }
 
 body {
