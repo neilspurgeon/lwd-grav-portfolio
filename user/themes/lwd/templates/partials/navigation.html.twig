@@ -15,3 +15,23 @@
     </ul>
   </nav>
 </div>
+
+<script>
+ $(document).ready(function() {
+  path = window.location.pathname;
+  currentLink = $('a[href$="' + path + '"]');
+
+  console.log(currentLink)
+
+  if (currentLink[0]) {
+    currentLink.addClass('active');
+    console.log('if')
+  } else {
+    $('a[href$="/lee_williams_portfolio"]').addClass('active')
+    console.log('else')
+  }
+
+
+
+ })
+</script>

@@ -24,6 +24,9 @@
   a {
     color: $primary-color;
   }
+  a.active h2{
+    border-bottom: 1.6px solid $primary-color;
+  }
 }
 
 .nav-bg {
